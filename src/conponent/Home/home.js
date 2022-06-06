@@ -11,17 +11,17 @@ class Home extends React.Component {
     state = {
         listTrending: [],
         allCategory: [],
-        imgslier: [
-            {
-                id: "1", imgSlide: "https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/xHrp2pq73oi9D64xigPjWW1wcz1.jpg"
-            },
-            {
-                id: "2", imgSlide: "https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/gUNRlH66yNDH3NQblYMIwgZXJ2u.jpg"
-            },
-            {
-                id: "3", imgSlide: "https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg"
-            }
-        ]
+        // imgslier: [
+        //     {
+        //         id: "1", imgSlide: "https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/xHrp2pq73oi9D64xigPjWW1wcz1.jpg"
+        //     },
+        //     {
+        //         id: "2", imgSlide: "https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/gUNRlH66yNDH3NQblYMIwgZXJ2u.jpg"
+        //     },
+        //     {
+        //         id: "3", imgSlide: "https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg"
+        //     }
+        // ]
     };
 
     componentDidMount = () => {
@@ -40,11 +40,11 @@ class Home extends React.Component {
     }
 
     render() {
-        let { listTrending, allCategory, imgslier } = this.state
+        let { listTrending, allCategory } = this.state
 
         return (
             <>
-                <Carousel>
+                {/* <Carousel>
                     {imgslier && imgslier.length > 0 &&
                         imgslier.map((item, index) => {
                             let linkImg = item.imgSlide
@@ -61,7 +61,7 @@ class Home extends React.Component {
                                 </Carousel.Item>
                             )
                         })}
-                </Carousel>
+                </Carousel> */}
                 <Container className="container-title" style={{
                     "overflow": "hidden",
                     "height": "25rem",
